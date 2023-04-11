@@ -1,0 +1,43 @@
+
+.buscar input{
+    height: 6vh;
+    width: 25vw;
+    font-family: monospace;
+    font-size: 16px;
+    border-radius: 30px;
+    background: #000000;
+    margin: 0 20px;
+    border: 1px solid #1730bf;
+    color:beige;
+    padding: 15px;
+    box-shadow: 
+    0 0 2px hsl(231, 25%, 56%), 
+    0 0 4px hsl(231, 38%, 59%), 
+    0 0 6px hsl(231, 40%, 51%), 
+    0 0 8px hsl(231, 53%, 50%), 
+    0 0 10px hsl(231, 66%, 44%), 
+    0 0 12px hsl(231, 79%, 42%);
+}
+
+::placeholder {
+    color:beige;
+    padding: 4px;
+}
+
+
+
+.btn {
+    background-color: #2b2d42;
+    border: none;
+    cursor: pointer;
+}
+
+.btn img {
+    height: 35px;
+    margin: -11px;
+}
+.btn:active {
+    background-color: darkgrey;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+    }

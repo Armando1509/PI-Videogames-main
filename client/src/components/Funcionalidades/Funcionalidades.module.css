@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+
+  .box {
+    display: inline;
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+  }
+
+  .box select {
+    background-color: black;
+    color: beige;
+    padding: 7px;
+    font-size: 18px;
+    appearance: button;
+    outline: none;
+    margin: 35px;
+    font-family: monospace;
+    border-radius: 10px;
+    box-shadow: 
+    0 0 2px hsl(231, 25%, 56%), 
+    0 0 4px hsl(231, 38%, 59%), 
+    0 0 6px hsl(231, 40%, 51%), 
+    0 0 8px hsl(231, 53%, 50%), 
+    0 0 10px hsl(231, 66%, 44%), 
+    0 0 12px hsl(231, 79%, 42%);
+  }
+  
+  .box select option {
+    padding: 30px;
+    font-family: monospace;
+  }
+
+  .btn {
+  padding:6px 10px;
+  text-align:center;
+  margin:.6rem auto;
+  font-size:1rem;
+  color:#FFCDB2;
+  text-decoration:none;
+  background-color:#2b2d42;
+  border-radius:35px;
+  transition:.3s;
+  font-family:system-ui;
+  }
+
+  .btn:hover{
+    color:#fff;
+    background-color:#000;
+    box-shadow:0 0 2px 2px rgba(0,0,0,0.4);
+  }
