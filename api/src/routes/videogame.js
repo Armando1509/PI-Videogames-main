@@ -58,13 +58,3 @@ module.exports = router;
 
 
 
-/* 
-{
-    "name": "lola",
-    "image": "https://www.trecebits.com/wp-content/uploads/2019/04/11854.jpg",
-    "released": "2019-08-18",
-    "rating": "2",
-    "platforms": "pes",
-    "description": "hola mundo",
-    "genres": ["Action", "RPG"]
-} */
