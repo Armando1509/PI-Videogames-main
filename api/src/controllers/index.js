@@ -1,10 +1,12 @@
 const { default: axios } = require('axios');
 const {Videogame, Genres} = require('../db.js')
+require('dotenv').config()
 
+const {API_KEY} = process.env
 //SOLICITUD PARA TRAERME MIS 100 VIDEOJUEGOS
 //A LA API
 const infoApi = async() => {
-    let url = `https://api.rawg.io/api/games?key=f56522df42dd45dea2ba340513fb5256`
+    let url = `https://api.rawg.io/api/games?key=${API_KEY}`
     let videojuegos = []
     try {
         for(let i=0; i<5; i++) { //con un for recorro mi API, ya que es un arreglo, 5 veces
@@ -61,7 +63,7 @@ const infoTotal = async () => {
 //SOLICITUD PARA MIS REQUEST POR QUERY
 //A MI API
 const nameApi = async (name) => {
-    const infoSearch = await axios.get(`https://api.rawg.io/api/games?search=${name}&key=f56522df42dd45dea2ba340513fb5256`) 
+    const infoSearch = await axios.get(`https://api.rawg.io/api/games?search=${name}&key=${API_KEY}`) 
     //console.log(infoSearch) //infoSearch = {{[]}} => me llega un objeto, que tiene una propiedad data y que a su vez tiene una propiedad results que es un []
 
     try {
@@ -87,7 +89,7 @@ const nameApi = async (name) => {
 //A MI ENDPOINT: https://api.rawg.io/api/games/{id}
 const idApi = async (id) => {
     try {
-        const rtaApi = await axios.get(`https://api.rawg.io/api/games/${id}?key=f56522df42dd45dea2ba340513fb5256`)
+        const rtaApi = await axios.get(`https://api.rawg.io/api/games/${id}?key=${API_KEY}`)
         if(rtaApi) {
             const vgId = await rtaApi.data
             const info = {
