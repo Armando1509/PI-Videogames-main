@@ -1,6 +1,9 @@
 const { default: axios } = require('axios');
 const { Router } = require('express');
 const {Genres} = require('../db.js')
+require('dotenv').config()
+
+const {API_KEY} = process.env
 
 const router = Router();
 
