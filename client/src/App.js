@@ -5,6 +5,9 @@ import LandingPage from './components/LangingPage/LangingPage';
 import Detail from './components/Detail/Detail';
 import Create from './components/Create/Create';
 import Page404 from './components/Page404/Page404';
+import axios from 'axios';
+
+axios.defaults.baseURL = "http://localhost:3001/"
 
 function App() {
   return (

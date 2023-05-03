@@ -12,6 +12,7 @@ class CardVideogame extends React.Component {
                     <h3 className={s.nombre}>{this.props.name}</h3>
                     <p className={s.genres}>{this.props.genres}</p>
                     <p className={s.rating}>⭐ {this.props.rating}</p>
+                    <p>{this.props.platforms}</p>
                  <  NavLink to={`/detail/${this.props.id}`} className={s.navLink}><span className={s.leer_mas}>More...</span></NavLink>
              </div>
             </div>

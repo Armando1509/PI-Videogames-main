@@ -33,6 +33,7 @@ export const Videogames = ({currentGames}) => {
                     name={v.name}
                     genres={v.genres?.map(e => typeof (e) === 'object' ? e.name : e).join(', ')}
                     rating={v.rating}
+                    platforms={v.platforms}
                     />)}) : <Error /> }
 
         </div>
