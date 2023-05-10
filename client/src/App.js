@@ -7,8 +7,8 @@ import Create from './components/Create/Create';
 import Page404 from './components/Page404/Page404';
 import axios from 'axios';
 
-//axios.defaults.baseURL = "https://pi-videogames-main-production-3537.up.railway.app/"
-axios.defaults.baseURL = "https://localhost:3001/"
+axios.defaults.baseURL = "https://pi-videogames-main-production-8e3c.up.railway.app/"
+//axios.defaults.baseURL = "https://localhost:3001/"
 
 function App() {
   return (
